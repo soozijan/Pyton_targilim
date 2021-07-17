@@ -1,0 +1,150 @@
+#שאלה 8 דף 1
+'''
+x=input()
+y=input()
+if x>y:
+    print(x)
+else:
+    print(y)
+'''
+
+#שאלה 9 דף1
+'''
+
+x = input()
+y = input()
+s = input()
+
+if x > y and x > s:
+    print(x)
+elif y > x and y > s:
+    print(y)
+else:
+    print(s)
+
+# שאלה 4 דף 2
+words = ['hello', 'python', 'pen', ' world of coding ' ]
+for of in words:
+    print(of.upper())
+
+# שאלה 5 דף 2
+words = ['hello', 'python', 'pen', ' world of coding ' ]
+for of in words:
+    if len(of)<4:
+        break
+    else:
+        print(of.upper())
+        
+
+
+# שאלה 6 דף 2
+
+name = "Sanaz Toobian"
+print(name[-5:])
+print(name[:len(name)//3])
+print(name.count('a'))
+print('b' in name)
+print(name.split())
+print(name.split().reverse())
+print(name[-7:].upper())
+
+
+
+# שאלה 7 דף 2
+
+phrase = "Hello world!"
+print(phrase.index('o'))
+print(phrase.rindex('o'))
+indexFirstO = phrase.index('o')
+print(phrase[:indexFirstO])
+
+
+# שאלה 8 דף 2
+
+phrase = "hello world!"
+print(phrase.replace('o',''))
+
+
+
+# שאלה 9 דף 2
+
+numbers = [8, 1000, -3, 2, 5]
+
+print(sum(numbers))
+print(max(numbers))
+print(min(numbers))
+print(sum(numbers)/len(numbers))
+
+# שאלה 8 דף 3
+
+for n in range(200, 1, -2):
+    print(n)
+  
+# שאלה 9 דף 3
+
+for n in range(0, 100 , 7):
+    print(n)
+    
+
+
+# שאלה 9 דף 4
+def add_calc(x=0, y=0):
+    return x+y
+def sub_calc(x=0 , y=0):
+    return x-y
+def mul_calc(x=0, y=0):
+    return x*y
+def div_calc(x=0, y=0):
+    return x/y
+
+a = int(input())
+b = int(input())
+
+print(add_calc(a,b))
+print(sub_calc(a,b))
+print(mul_calc(a,b))
+print(div_calc(a,b))
+
+
+
+# question 11
+def little_number(a,b,c):
+    if a<b and a<c:
+        return a
+    elif b<a and b<c:
+        return b
+    else:
+        return c
+a = int(input())
+b = int(input())
+c = int(input())
+print(little_number(a,b,c))
+
+
+
+# שאלה 13 דף 5
+
+def tryGetValue(dic, key):
+    keys = list(dic.keys())
+    if key in keys:
+        return dic[key]
+    else:
+        return None
+
+'''
+
+# שאלה 16 דף 5
+dic = {1:'moshe',2:'issak',3:'avi'}
+
+while True:
+    number_zehut = input('Insert ID: ')
+    name = input('Insert your name: ')
+    if int(number_zehut) == -1:
+        break
+    keys = list(dic.keys())
+    if number_zehut in keys:
+        print('This ID already exist')
+    else:
+        dic.update({number_zehut: name})
+
+print(dic)
